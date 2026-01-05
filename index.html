@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Research Areas</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+}
+
+.research-section {
+  max-width: 1100px;
+  padding: 30px;
+}
+
+.section-title {
+  color: #e53935;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.card {
+  background: #f7f7f7;
+  border-radius: 8px;
+  padding: 35px;
+  position: relative;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Left color bar */
+.card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 6px;
+  height: 100%;
+}
+
+.red::before { background: #e53935; }
+.gray::before { background: #9e9e9e; }
+.orange::before { background: #fb8c00; }
+
+/* Hover */
+.card:hover {
+  background: #000;
+  color: #fff;
+}
+
+.card:hover .learn-more {
+  color: #fff;
+}
+
+.learn-more {
+  display: inline-block;
+  margin-top: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Hidden text */
+.more-text {
+  margin-top: 15px;
+  font-size: 15px;
+  line-height: 1.6;
+  display: none;
+}
+
+/* Active state */
+.card.active .more-text {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<section class="research-section">
+  <div class="section-title">RESEARCH AREAS</div>
+
+  <div class="card-grid">
+
+    <div class="card red">
+      <h2>Heterogeneous Multicore Systems</h2>
+      <div class="learn-more">Learn more →</div>
+      <div class="more-text">
+        Architecture design, scheduling strategies, and performance
+        optimization across heterogeneous CPU–GPU–accelerator systems.
+      </div>
+    </div>
+
+    <div class="card gray">
+      <h2>Formal Verification & Logic Synthesis</h2>
+      <div class="learn-more">Learn more →</div>
+      <div class="more-text">
+        Model checking, equivalence checking, and correctness-driven
+        logic synthesis for reliable hardware systems.
+      </div>
+    </div>
+
+    <div class="card orange">
+      <h2>Agile Hardware Design</h2>
+      <div class="learn-more">Learn more →</div>
+      <div class="more-text">
+        Agile methodologies, rapid prototyping, and hardware–software
+        co-design approaches for modern digital systems.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+const cards = document.querySelectorAll(".card");
+
+cards.forEach(card => {
+  const btn = card.querySelector(".learn-more");
+
+  btn.addEventListener("click", (e) => {
+    e.stopPropagation();
+
+    // Close all other cards
+    cards.forEach(c => c.classList.remove("active"));
+
+    // Open clicked card
+    card.classList.add("active");
+  });
+});
+
+// Click outside → close all
+document.addEventListener("click", () => {
+  cards.forEach(c => c.classList.remove("active"));
+});
+</script>
+
+</body>
+</html>
