@@ -1,0 +1,152 @@
+/* ---------- RESET ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.hero {
+  font-family: "Georgia", serif;
+  /* background: #ffffff; */
+  color: #111;
+}
+
+/* ---------- LAYOUT ---------- */
+.hero {
+  /* max-width: 1300px; */
+  margin-top: 30px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* ---------- IMAGE ---------- */
+.hero-img img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* ---------- TEXT ---------- */
+.hero-content h1 {
+  font-size: 56px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.meta {
+  display: flex;
+  gap: 30px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.meta span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+.highlight {
+  color: #e53935;
+  font-weight: 600;
+}
+
+a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  border-color: #111;
+}
+
+/* ---------- BUTTONS ---------- */
+.actions {
+  margin-top: 35px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  border: 2px solid #ddd;
+  /* background: #fff; */
+  color: #111;
+  transition: all 0.25s ease;
+}
+
+.btn:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  transform: translateY(-2px);
+}
+
+.btn.email {
+  background: #ef5350;
+  border-color: #ef5350;
+  color: #fff;
+}
+
+.btn.email:hover {
+  background: #e02623;
+}
+
+
+.btn svg {
+  width: 18px;
+  height: 18px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.8;
+}
+.btn svg path {
+  fill: currentColor;
+  stroke: none;
+}
+.svgld{
+  width: 8px;      /* try 12px–16px */
+  height: 10px;
+  margin-right: 4px;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .meta {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .actions {
+    justify-content: center;
+  }
+}

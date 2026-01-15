@@ -1,0 +1,80 @@
+.contact-section {
+  background: radial-gradient(circle at top, #2b2623, #0f0f0f);
+  color: #ffffff;
+  padding: 100px 100px;
+  margin-bottom: 60px;
+  text-align: center;
+  scroll-margin-top: 80px;
+}
+
+.contact-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contact-container h1 {
+  font-size: 48px;
+  margin-bottom: 25px;
+  font-family: "Georgia", serif;
+}
+
+.contact-text {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #e0e0e0;
+}
+
+.contact-info {
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  font-size: 18px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  font-size: 20px;
+}
+
+.divider {
+  opacity: 0.6;
+}
+
+.visitor-box {
+  margin-top: 40px;
+  display: inline-block;
+  background-color: #2f77a8;
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.visitor-count {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.visitor-range {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.visitor-map {
+  width: 260px;
+  display: block;
+  border-radius: 3px;
+}
+.clustrmaps-wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
+#clustrmaps {
+  max-width: 100%;
+}

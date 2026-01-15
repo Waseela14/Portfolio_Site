@@ -1,0 +1,108 @@
+body, html {
+  /* height: auto;  */
+  margin-bottom: 50px;
+  /* margin-top: 50px; */
+}/* forces full viewport height
+/* html, body {
+      font-family: Arial, sans-serif;
+      background-color: #bdacac;
+      margin: 0;
+      padding: 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+    } */
+#teaching1{
+  font-family: Arial, sans-serif;
+    margin-top: 60px;
+    margin-bottom: 60px;
+      margin-left: 0;
+      margin-right: 0;
+      padding: 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      scroll-margin-top: 110px;
+      /* margin-left: 100px; */
+}
+    h1 {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: #f15858;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+    }
+
+    .cards_teaching {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-left: 0px;
+    }
+
+    .card_teaching {
+      background-color: #f1efef;
+      border-radius: 6px;
+      padding: 20px;
+      width: 350px;
+      position: relative;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: background-color 0.3s;
+      border-left: 4px solid #f15858;
+    }
+
+    .card_teaching:hover {
+      background-color: #fff5e9; /* baby pink */
+    }
+
+    .card_teaching h2 {
+      margin-top: 0;
+      margin-bottom: 5px;
+      font-size: 20px;
+    }
+
+    .role {
+      background-color: #e0e0e0;
+      color: #333;
+      font-size: 12px;
+      padding: 3px 10px;
+      border-radius: 20px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .card_teaching h3 {
+      margin: 10px 0 10px 0;
+      font-size: 16px;
+    }
+
+    .card_teaching p {
+      font-size: 14px;
+      line-height: 1.5;
+      color: #555;
+    }
+
+    .semesters {
+      margin-top: 15px;
+    }
+
+    .semester {
+      display: inline-block;
+      background-color: #ffdede;
+      color: #f15858;
+      padding: 5px 10px;
+      margin-right: 5px;
+      border-radius: 5px;
+      font-size: 12px;
+    }
+    

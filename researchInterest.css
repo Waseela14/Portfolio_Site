@@ -1,0 +1,98 @@
+
+/* * {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+} */
+
+/* body {
+  margin: 0;
+  /* background: #faf7f7; }*/
+
+/*  For RESEARCH INTEREST */
+.research-section1{
+  margin: 60 60 60 60px;
+  scroll-margin-top: 80px;
+}
+.research-section {
+  /* max-width: 1100px; */
+  padding: 30px;
+  /* margin-top: 60px;
+  margin-bottom: 30px; */
+  
+  
+}
+
+.section-title {
+  color: #e53935;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.card {
+  background: #f1efef;
+  border-radius: 8px;
+  padding: 35px;
+  position: relative;
+  transition: background 0.3s ease, color 0.3s ease;
+  margin-left: 60px;
+}
+
+/* Left bar */
+.card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 6px;
+  height: 100%;
+}
+
+.red::before { background: #e53935; }
+.gray::before { background: #9e9e9e; }
+.orange::before { background: #fb8c00; }
+
+/* Hover */
+.card:hover {
+  background: #fff5e9;
+  /* color: #fff; */
+}
+
+/* Learn more button */
+.learn-more {
+  margin-top: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-block;
+  color: #e53935;
+}
+
+/* Hide button when active */
+.card.active .learn-more {
+  display: none;
+}
+
+/* Extra text */
+.more-text {
+  margin-top: 15px;
+  font-size: 15px;
+  line-height: 1.6;
+  display: none;
+}
+
+/* Show text only when active */
+.card.active .more-text {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
